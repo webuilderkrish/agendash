@@ -41,5 +41,5 @@ Copyrights - Manoj Chalode (December 2018)
 
 [agenda npm package]:https://github.com/agenda/agenda
 [index.js file]:./lib/index.js
-[ui folder]:./ui/index.html
-[public folder]:./lib/index.html
+[ui folder]:./ui/
+[public folder]:./lib/public
