@@ -1,33 +1,23 @@
-<mat-form-field>
-  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
-</mat-form-field>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+<table >
 
   
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef>Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-  </ng-container>
-
+  <tr>
+    <th> Name </th>
+    <th> Type </th>
+    <th>  Status </th>
+    <th> Details </th>
+    
+  </tr>
+  <tr >
+    <td> {{ uData.name }} </td>
+    <td> {{ uData.type }} </td>
+    <td *ngIf="uData.lockedAt == !null; else show"> - </td>
+    <ng-template #show>Alternate text while primary text is hidden</ng-template>
+    <td> <button class="btn btn-primary">fdsfd</button> </td>
+    
+  </tr>
  
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Type </th>
-    <td mat-cell *matCellDef="let element"> {{element.type}} </td>
-  </ng-container>
-
- 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef>  Status </th>
-    <td mat-cell *matCellDef="let element"> {{element.lockedAt}} </td>
-  </ng-container>
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="symbol">
-    <th mat-header-cell *matHeaderCellDef> Symbol </th>
-    <td mat-cell > <button>hiii</button> </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
 </table>
