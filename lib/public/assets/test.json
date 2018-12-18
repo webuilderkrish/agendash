@@ -1,0 +1,20 @@
+{
+    "_id" : "5c016763cfa1eeddb153be3d",
+    "data" : {
+        "url" : "http://192.168.1.135:8080/cdata-nj_jivox.xml",
+        "root_path" : "listing",
+        "cuid" : "cjp494ng20000pdvazcu0k2wj",
+        "callback_url" : "http://local.app.fluidads-dev.com/api/external/feeds/update?feedId=78&accountId=2",
+        "callback_method" : "POST"
+    },
+    "name" : "/feed/refresh",
+    "type" : "normal",
+    "priority" : 0,
+    "nextRunAt" : "2019-11-30T16:37:56.387Z",
+    "repeatInterval" : "1 year",
+    "repeatTimezone" : null,
+    "lastModifiedBy" : null,
+    "lockedAt" : null,
+    "lastRunAt" : "2018-11-30T16:37:56.387Z",
+    "lastFinishedAt" : "2018-11-30T16:38:55.704Z"
+}

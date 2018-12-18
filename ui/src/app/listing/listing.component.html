@@ -1,23 +1,15 @@
-
-
-<table >
-
-  
+<table>
   <tr>
     <th> Name </th>
     <th> Type </th>
-    <th>  Status </th>
+    <th> Status </th>
     <th> Details </th>
-    
   </tr>
-  <tr >
+  <tr>
     <td> {{ uData.name }} </td>
     <td> {{ uData.type }} </td>
     <td *ngIf="uData.lockedAt == !null; else show"> - </td>
     <ng-template #show>Alternate text while primary text is hidden</ng-template>
     <td> <button class="btn btn-primary">fdsfd</button> </td>
-    
   </tr>
- 
-  
 </table>

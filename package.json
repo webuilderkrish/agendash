@@ -7,7 +7,7 @@
 		"lib": "lib"
 	},
 	"scripts": {
-		"start": "node ./test/index.js",
+		"start": "node ./demo/index.js",
 		"test": "npm run test"
 	},
 	"repository": {
